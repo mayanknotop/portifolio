@@ -331,9 +331,11 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+.avatar-box img {
+  width: 150px; /* Adjust to desired size */
+  height: 150px; /* Keep equal to width for a circle */
+  border-radius: 50%; /* Creates the circular shape */
+  object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .info-content .name {
